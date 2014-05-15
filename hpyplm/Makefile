@@ -14,6 +14,9 @@ BOOST_SERIALIZATION=$(BOOST_ROOT)/lib/libboost_serialization.a
 hpyplm: hpyplm.cc
 	$(CXX) -std=c++0x -g -O0 -Wall -L $(COCO_LIB) -I.. hpyplm.cc -o hpyplm -lcolibricore -lboost_filesystem -lboost_system -I$(COCO_INCLUDE) -lz -lbz2
 
+oovtest: oovtest.cc
+	$(CXX) -std=c++0x -g -O0 -Wall -L $(COCO_LIB) -I.. oovtest.cc -o oovtest -lcolibricore -lboost_filesystem -lboost_system -I$(COCO_INCLUDE) -lz -lbz2
+
 #dhpyplm: dhpyplm.cc
 #	$(CXX) -std=c++0x -O3 -g -Wall -I.. dhpyplm.cc -o dhpyplm
 

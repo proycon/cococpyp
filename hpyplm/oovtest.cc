@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
 
 	std::string dat_output_file = "/tmp/tmpout/cpyp.colibri.dat";
 
-        _class_encoder.encodefile(train_input_file, dat_output_file, false, false, true, true);
+    _class_encoder.encodefile(train_input_file, dat_output_file, false, false, true, false);
 
 	_class_decoder.load("/tmp/tmpout/cpyp.colibri.cls");
 
@@ -67,7 +67,7 @@ int main(int argc, char** argv) {
 
 	std::string test_dat_output_file = "/tmp/tmpout/cpyp.test.colibri.dat";
 
-	_class_encoder.encodefile(test_input_file, test_dat_output_file, true, true, false, true);
+	_class_encoder.encodefile(test_input_file, test_dat_output_file, true, true, false, false);
 	_class_encoder.save("/tmp/tmpout/cpyp.test.colibri.cls");
 
 	ClassDecoder _test_class_decoder("/tmp/tmpout/cpyp.test.colibri.cls");
@@ -91,7 +91,7 @@ int main(int argc, char** argv) {
                         Pattern focus = Pattern();
 
                         if (p_size == kORDER) {
-                                std::cout << q.tostring(_class_decoder) << std::endl;
+                                std::cout << q.tostring(_test_class_decoder) << std::endl;
                                 //        context = Pattern(q, 0, p_size - 1);
                                 //        focus = q[p_size - 1];
 
