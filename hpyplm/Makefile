@@ -1,12 +1,13 @@
 #all: hpyplm dhpyplm
 all: hpyplm
 
-#COCO_INCLUDE=/usr/local/include/colibri-core
+COCO_INCLUDE=/usr/local/include/colibri-core
 #COCO_INCLUDE=/home/proycon/local/include/colibri-core
-COCO_INCLUDE=/vol/customopt/uvt-ru/include/colibri-core
+#COCO_INCLUDE=/vol/customopt/uvt-ru/include/colibri-core
 #COCO_LIB=/home/proycon/local/lib
 #COCO_INCLUDE=/home/louis/Software/colibri-core/include
-COCO_INCLUDE=/vol/customopt/uvt-ru/lib
+#COCO_INCLUDE=/vol/customopt/uvt-ru/lib
+COCO_LIB=/usr/local/lib
 BOOST_INCLUDE=/usr/include/boost
 BOOST_SERIALIZATION=$(BOOST_ROOT)/lib/libboost_serialization.a
 
